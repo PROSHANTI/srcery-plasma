@@ -1,67 +1,59 @@
 # SRCERY Plasma
 
-Community adaptation by **SHANTI**.
+Unofficial community adaptation by **SHANTI** for KDE Plasma 6.
 
-![SRCERY palette and wallpaper preview](share/plasma/look-and-feel/org.srcery.desktop/contents/previews/preview.png)
+![SRCERY preview](theme/contents/previews/preview.png)
 
+Charcoal backgrounds, parchment text, gold highlights and the official Srcery
+logo. **Version 1.2.0 is one self-contained Global Theme package.**
 
-Unofficial community adaptation for KDE Plasma 6. Warm charcoal (#1C1B19), parchment text (#FCE8C3), gold selection (#FBB829), Iosevka typography, native Breeze controls, and the official Srcery logo. Built and checked on Steam Deck OLED, Plasma 6.7.3 / Qt 6.11.1.
+## Install with KDE
 
-## Install
-
-### Native KDE package, version 1.1.0
-
-Open **System Settings / Colors & Themes / Global Theme / Get New**, search for
-**SRCERY Plasma**, and click Install. KDE downloads the matching Plasma Style
-and grey logo wallpaper automatically. Select SRCERY and Apply after closing
-the download dialog. No desktop layout is included, so panels and widgets stay
-in place. Iosevka is selected if installed; install it once using Font Management
-on a new system. Font registration is not performed by a global theme.
+Open **System Settings → Colors & Themes → Global Theme → Get New**, search for
+**SRCERY Plasma**, and click Install or Update. Close the download dialog,
+select SRCERY, and Apply.
 
 [KDE Store](https://store.kde.org/p/2380677/) ·
-[Native package details and build instructions](NATIVE-PACKAGES.md)
+[Latest GitHub release](https://github.com/PROSHANTI/srcery-plasma/releases/latest)
 
-### Complete manual suite, version 1.0.0
+The package contains the color scheme, previews, animated Plasma splash and
+grey logo wallpaper. It uses the Breeze components included with KDE and
+downloads no companion themes. No terminal commands, separate installer,
+layout replacement or administrator privileges are required.
 
-Requires Plasma 6, Breeze Qt style/decoration/cursors, Python 3, Fontconfig and KPackage tools. Run as your desktop user, without sudo:
+Your chosen icons, wallpaper/slideshow, panels and widgets are preserved.
+The embedded wallpaper is available as the theme's native default asset; KDE
+keeps the current desktop wallpaper when applying appearance settings only.
+Iosevka is requested if already available; otherwise Qt selects an available
+font fallback automatically. The theme does not install fonts or external
+icon sets. Applications with independent GTK/Flatpak styling may retain their
+own appearance. The splash is for entering the Plasma desktop.
 
-    python3 install.py
+## Upgrades
 
-To install and apply the complete appearance, including the grey logo wallpaper:
+1.2.0 updates directly from the original manual 1.0.0 suite and the 1.1.0 native
+release. It no longer attempts to update their separate Plasma Style packages,
+so the missing package-type metadata in the old style cannot block installation.
+The old style files are left intact; the current theme selects built-in Breeze.
+Historical releases and sources remain in Git history.
 
-    python3 install.py --apply
+## Source and verification
 
-To apply while preserving your current wallpaper or slideshow:
+`theme/` is the complete installable KPackage. `build.py` creates a reproducible
+archive and SHA256 checksum for release maintainers:
 
-    python3 install.py --apply --keep-wallpaper
+    python3 build.py --output dist
 
-The native global theme defaults include `Wallpaper/Image=Srcery`. The complete manual bundle installs that wallpaper, the Plasma style, color scheme and actual Iosevka font. Installing only the inner look-and-feel folder from the old 1.0.0 manual suite does not install these companion files. Use the native 1.1.0 download for KDE's Get New interface.
+The regression script in `tests/` runs in temporary home directories and separate
+D-Bus sessions. It checks clean installation, nonstandard XDG paths, updates from
+1.0.0 and 1.1.0, recovery after an interrupted update, actual Plasma component
+colors, embedded wallpaper resolution, and preservation of icon selection,
+slideshows and panels.
 
-No panel/widget layout is distributed or reset. The installer uses XDG user directories, backs up overwritten theme files and appearance settings under `~/.local/state/srcery-plasma/backups/`, and prints the backup path. It makes no network requests, modifies no system files and does not change the login manager or boot screen. Review install.py before running it. Backups include the desktop config for recovery; restoring the whole config also restores the layout as it was at backup time.
+## Credits
 
-## Round icons
-
-Tela Circle by vinceliuice is an optional separate dependency, not bundled or claimed as our artwork:
-https://github.com/vinceliuice/Tela-circle-icon-theme
-https://store.kde.org/p/1359276/
-
-Download the official source, review its installer, then pass the extracted source directory:
-
-    python3 install.py --apply --tela-source /path/to/Tela-circle-icon-theme
-
-This invokes the upstream supported custom-color option with FBB829 and circular folders. It installs the base/light/dark variants under distinct Srcery-Circle names. Existing Srcery-Circle files are not overwritten. If that dependency is already installed, omit the argument to reuse it. Without it, the suite uses system Breeze Dark icons. Reapplying the native theme later retains the icon selection written by this installer.
-
-## Included
-
-- Global Theme: org.srcery.desktop, including embedded exact color roles and animated logo splash
-- Native Plasma style: Srcery, with Breeze fallback
-- Srcery.colors and Konsole Srcery profile/color scheme
-- Unmodified Iosevka Regular 24.1.0, with SIL OFL 1.1
-- Grey official-logo wallpaper, 3840×2160
-- Source QML/SVG, installer and licence notices
-
-Breeze GTK from your distribution is selected to follow KDE colors; this public bundle does not redistribute the device-specific GTK CSS. GTK/Flatpak apps and apps with their own styles may require separate configuration. Font and appearance updates may require closing and reopening existing applications. This splash appears when entering the Plasma desktop; it does not replace Steam Gaming Mode videos, firmware boot graphics or the login screen.
-
-Palette and official assets: https://srcery.sh and https://github.com/srcery-colors/srcery-assets
-Iosevka: https://github.com/be5invis/Iosevka
-See NOTICE and LICENSES for attribution. The adaptation is not an official release of Srcery or KDE.
+Theme adaptation by SHANTI, MIT. Official logo by Daniel Berg and srcery-colors
+contributors, CC BY 4.0, with unchanged geometry and colors:
+https://github.com/srcery-colors/srcery-assets . Breeze is provided by KDE.
+See `NOTICE`, `theme/LICENSE`, and `theme/LICENSES`. No affiliation or endorsement
+by KDE or the Srcery project is claimed.

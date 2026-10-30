@@ -1,0 +1,18 @@
+{
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Id": "org.srcery.desktop",
+    "Name": "SRCERY",
+    "Description": "Self-contained Srcery palette, Breeze appearance, logo splash and bundled wallpaper. No additional downloads or installers.",
+    "Version": "1.2.0",
+    "License": "MIT",
+    "Authors": [
+      {
+        "Name": "SHANTI"
+      }
+    ],
+    "Website": "https://github.com/PROSHANTI/srcery-plasma",
+    "Icon": "preferences-desktop-theme"
+  },
+  "X-Plasma-API": "5.0"
+}

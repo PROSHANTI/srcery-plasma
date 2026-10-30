@@ -1,11 +1,8 @@
-SRCERY Plasma, an unofficial community adaptation.
+SRCERY Plasma, unofficial community adaptation by SHANTI.
 Original palette: https://srcery.sh
 Official logo: Daniel Berg and srcery-colors contributors, CC BY 4.0.
 https://github.com/srcery-colors/srcery-assets
-https://creativecommons.org/licenses/by/4.0/
-Logo geometry/colors are unmodified; wallpaper and splash arrange it on a new background.
-New theme code, color scheme adaptation, wallpaper background and installer: MIT.
-Bundled unmodified Iosevka 24.1.0: Renzhi Li, SIL OFL 1.1; see LICENSES.
-Breeze Qt widgets, Plasma fallback, window decorations and cursors are system dependencies, not redistributed.
-Tela Circle by vinceliuice is optional and not redistributed. Source: https://github.com/vinceliuice/Tela-circle-icon-theme
-No endorsement or affiliation with the Srcery or KDE teams is claimed.
+Logo geometry and colors are unchanged. New code and composition: MIT.
+Breeze controls, window decoration, cursors and Plasma style are provided by KDE.
+Iosevka is requested if installed; Qt uses an available font fallback otherwise.
+No font or external icon theme is redistributed by this package.

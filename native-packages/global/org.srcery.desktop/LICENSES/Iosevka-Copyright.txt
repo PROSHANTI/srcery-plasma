@@ -1,3 +1,0 @@
-Bundled unmodified Iosevka 24.1.0 font:
-Copyright 2015-2023, Renzhi Li (aka. Belleve Invis, belleve@typeof.net).
-SIL Open Font License 1.1. See Iosevka-OFL-1.1.md.

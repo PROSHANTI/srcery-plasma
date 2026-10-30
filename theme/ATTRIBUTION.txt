@@ -1,0 +1,8 @@
+SRCERY Plasma, unofficial community adaptation by SHANTI.
+Original palette: https://srcery.sh
+Official logo: Daniel Berg and srcery-colors contributors, CC BY 4.0.
+https://github.com/srcery-colors/srcery-assets
+Logo geometry and colors are unchanged. New code and composition: MIT.
+Breeze controls, window decoration, cursors and Plasma style are provided by KDE.
+Iosevka is requested if installed; Qt uses an available font fallback otherwise.
+No font or external icon theme is redistributed by this package.

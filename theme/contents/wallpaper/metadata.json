@@ -1,0 +1,13 @@
+{
+  "KPlugin": {
+    "Id": "Srcery",
+    "Name": "SRCERY",
+    "Authors": [
+      {
+        "Name": "SHANTI"
+      }
+    ],
+    "License": "CC-BY-4.0",
+    "Version": "1.2.0"
+  }
+}
