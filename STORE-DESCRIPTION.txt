@@ -1,0 +1,16 @@
+Title: SRCERY Plasma
+Version: 1.0.0
+Author: SHANTI
+Category: Global Themes (Plasma 6)
+
+A warm, restrained desktop built around the Srcery palette: charcoal backgrounds, parchment text and gold highlights. Includes the real Iosevka font, a native Breeze-based Plasma style, matching Konsole colors, grey official-logo wallpaper and animated Plasma splash.
+
+Unofficial community adaptation, tested on Steam Deck OLED with Plasma 6.7.3 / Qt 6.11.1. Uses system Breeze controls and preserves existing panel/widget layouts.
+
+INSTALLATION: this download is the complete MANUAL-INSTALL suite. Extract it, review install.py, then run python3 install.py --apply from your Plasma desktop session. The installer works only in your user home, creates backups and makes no network requests. No sudo is needed. The grey logo wallpaper is the default. Use --keep-wallpaper to retain your own wallpaper/slideshow.
+
+ROUND ICONS: optional Tela Circle by vinceliuice, separately obtained from https://github.com/vinceliuice/Tela-circle-icon-theme . Pass its reviewed source directory via --tela-source to install circular folders in Srcery gold. Without it, system Breeze Dark icons are used. Icons are not bundled or claimed as our artwork.
+
+The global theme is part of a suite: installing only its inner folder will not install companion fonts, wallpaper and Plasma style. This release is not a one-click Get New Global Themes package. GTK/Flatpak apps with their own styles may need separate configuration.
+
+New adaptation code: MIT. Official Srcery logo: Daniel Berg and srcery-colors contributors, CC BY 4.0. Iosevka by Renzhi Li: SIL OFL 1.1. Complete notices are included. Not affiliated with or endorsed by KDE or the Srcery project.

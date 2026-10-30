@@ -1,0 +1,18 @@
+SRCERY Plasma 1.0.0
+Community adaptation by SHANTI.
+
+Validation on Steam Deck OLED / KDE Plasma 6.7.3 / Qt 6.11.1:
+- Installer ran in an empty temporary HOME with isolated D-Bus.
+- Native KPackage accepted the global theme and wallpaper package.
+- Installer --apply --keep-wallpaper completed in the isolated session.
+- Read-back: window 28,27,25; text 252,232,195; selection 251,184,41 / 28,27,25.
+- Fontconfig resolved Iosevka from the newly installed font directory.
+- Native Plasma style applied successfully.
+- Optional upstream Tela Circle source installed the three custom-color variants.
+- Circular default folder SVG contains #FBB829.
+- Existing desktop layout and wallpaper slideshow were not changed during validation.
+- Public preview is a palette/wallpaper composition, not a desktop screenshot.
+- Live Desktop wallpaper application is implemented through the standard Plasma scripting API; isolated validation did not create a full Plasma shell.
+
+This is a manual-install suite. The optional Tela Circle source is not redistributed.
+The host-specific GTK CSS used on the author's Deck is not redistributed; native Breeze GTK is selected by the public installer.

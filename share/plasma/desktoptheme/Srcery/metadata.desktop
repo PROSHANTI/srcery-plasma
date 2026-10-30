@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SRCERY
+Comment=Srcery colors with native Breeze components
+X-KDE-PluginInfo-Name=Srcery
+X-KDE-PluginInfo-Version=1.0.0
+X-KDE-PluginInfo-License=MIT
+
+[Settings]
+FallbackTheme=default
