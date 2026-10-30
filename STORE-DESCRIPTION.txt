@@ -1,16 +1,16 @@
-Title: SRCERY Plasma
-Version: 1.0.0
-Author: SHANTI
-Category: Global Themes (Plasma 6)
+SRCERY Plasma 1.2.0 by SHANTI
 
-A warm, restrained desktop built around the Srcery palette: charcoal backgrounds, parchment text and gold highlights. Includes the real Iosevka font, a native Breeze-based Plasma style, matching Konsole colors, grey official-logo wallpaper and animated Plasma splash.
+One self-contained KDE Plasma 6 Global Theme. Charcoal backgrounds, parchment
+text, gold highlights, native Breeze appearance, animated logo splash and
+embedded grey logo wallpaper. No companion downloads or separate installer.
 
-Unofficial community adaptation, tested on Steam Deck OLED with Plasma 6.7.3 / Qt 6.11.1. Uses system Breeze controls and preserves existing panel/widget layouts.
+Install or update through System Settings / Colors & Themes / Global Theme /
+Get New. Search SRCERY Plasma, click Install or Update, then select and Apply.
+Existing icons, wallpaper/slideshow, panels and widgets are preserved.
+Iosevka is used if already available; otherwise Qt chooses a font fallback.
 
-INSTALLATION: this download is the complete MANUAL-INSTALL suite. Extract it, review install.py, then run python3 install.py --apply from your Plasma desktop session. The installer works only in your user home, creates backups and makes no network requests. No sudo is needed. The grey logo wallpaper is the default. Use --keep-wallpaper to retain your own wallpaper/slideshow.
+Direct upgrades from 1.0.0 and 1.1.0 are verified. The old separate style is no
+longer updated, so its missing package-type metadata cannot block installation.
 
-ROUND ICONS: optional Tela Circle by vinceliuice, separately obtained from https://github.com/vinceliuice/Tela-circle-icon-theme . Pass its reviewed source directory via --tela-source to install circular folders in Srcery gold. Without it, system Breeze Dark icons are used. Icons are not bundled or claimed as our artwork.
-
-The global theme is part of a suite: installing only its inner folder will not install companion fonts, wallpaper and Plasma style. This release is not a one-click Get New Global Themes package. GTK/Flatpak apps with their own styles may need separate configuration.
-
-New adaptation code: MIT. Official Srcery logo: Daniel Berg and srcery-colors contributors, CC BY 4.0. Iosevka by Renzhi Li: SIL OFL 1.1. Complete notices are included. Not affiliated with or endorsed by KDE or the Srcery project.
+Adaptation: SHANTI, MIT. Official Srcery logo: Daniel Berg and srcery-colors
+contributors, CC BY 4.0. Breeze is provided by KDE. Unofficial community theme.

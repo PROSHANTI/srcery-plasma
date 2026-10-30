@@ -1,18 +1,19 @@
-SRCERY Plasma 1.0.0
+SRCERY Plasma 1.2.0
 Community adaptation by SHANTI.
 
-Validation on Steam Deck OLED / KDE Plasma 6.7.3 / Qt 6.11.1:
-- Installer ran in an empty temporary HOME with isolated D-Bus.
-- Native KPackage accepted the global theme and wallpaper package.
-- Installer --apply --keep-wallpaper completed in the isolated session.
-- Read-back: window 28,27,25; text 252,232,195; selection 251,184,41 / 28,27,25.
-- Fontconfig resolved Iosevka from the newly installed font directory.
-- Native Plasma style applied successfully.
-- Optional upstream Tela Circle source installed the three custom-color variants.
-- Circular default folder SVG contains #FBB829.
-- Existing desktop layout and wallpaper slideshow were not changed during validation.
-- Public preview is a palette/wallpaper composition, not a desktop screenshot.
-- Live Desktop wallpaper application is implemented through the standard Plasma scripting API; isolated validation did not create a full Plasma shell.
+One self-contained Plasma/LookAndFeel package with zero external KNS dependencies.
+Install and update from KDE System Settings / Global Theme / Get New.
+No terminal commands, separate installer or administrator privileges are required.
 
-This is a manual-install suite. The optional Tela Circle source is not redistributed.
-The host-specific GTK CSS used on the author's Deck is not redistributed; native Breeze GTK is selected by the public installer.
+Contains exact Srcery colors, previews, animated logo splash and grey logo wallpaper.
+Uses the Breeze components included with KDE. Existing icons, wallpaper/slideshow,
+panels and widgets are preserved. Iosevka is requested if already available;
+Qt selects an available font fallback automatically otherwise. No font is installed.
+
+Verified on Steam Deck / Plasma 6.7.3:
+- Clean installation and custom XDG paths.
+- Direct native upgrades from original 1.0.0 and native 1.1.0.
+- Recovery after an interrupted upgrade.
+- Actual Plasma control colors: #1C1B19 background, #FCE8C3 text.
+- Gold selection, embedded wallpaper resolution, icon and slideshow preservation.
+- Reproducible release archive and matching published SHA256.
