@@ -1,0 +1,17 @@
+{
+  "KPlugin": {
+    "Id": "Srcery",
+    "Name": "SRCERY",
+    "Description": "Srcery palette over native Breeze components",
+    "Version": "1.1.0",
+    "License": "MIT",
+    "Authors": [
+      {
+        "Name": "SHANTI"
+      }
+    ],
+    "Website": "https://github.com/PROSHANTI/srcery-plasma"
+  },
+  "X-Plasma-API": "5.0",
+  "KPackageStructure": "Plasma/Theme"
+}

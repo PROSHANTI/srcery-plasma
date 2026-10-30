@@ -1,4 +1,4 @@
-# SRCERY Plasma 1.0.0
+# SRCERY Plasma
 
 Community adaptation by **SHANTI**.
 
@@ -8,6 +8,20 @@ Community adaptation by **SHANTI**.
 Unofficial community adaptation for KDE Plasma 6. Warm charcoal (#1C1B19), parchment text (#FCE8C3), gold selection (#FBB829), Iosevka typography, native Breeze controls, and the official Srcery logo. Built and checked on Steam Deck OLED, Plasma 6.7.3 / Qt 6.11.1.
 
 ## Install
+
+### Native KDE package, version 1.1.0
+
+Open **System Settings / Colors & Themes / Global Theme / Get New**, search for
+**SRCERY Plasma**, and click Install. KDE downloads the matching Plasma Style
+and grey logo wallpaper automatically. Select SRCERY and Apply after closing
+the download dialog. No desktop layout is included, so panels and widgets stay
+in place. Iosevka is selected if installed; install it once using Font Management
+on a new system. Font registration is not performed by a global theme.
+
+[KDE Store](https://store.kde.org/p/2380677/) ·
+[Native package details and build instructions](NATIVE-PACKAGES.md)
+
+### Complete manual suite, version 1.0.0
 
 Requires Plasma 6, Breeze Qt style/decoration/cursors, Python 3, Fontconfig and KPackage tools. Run as your desktop user, without sudo:
 
@@ -21,7 +35,7 @@ To apply while preserving your current wallpaper or slideshow:
 
     python3 install.py --apply --keep-wallpaper
 
-The native global theme defaults include `Wallpaper/Image=Srcery`. The complete bundle installs that wallpaper, the Plasma style, color scheme and actual Iosevka font. Installing only the inner look-and-feel folder does not install these companion files. This download is a manual-install suite, not a one-click KNewStuff dependency bundle.
+The native global theme defaults include `Wallpaper/Image=Srcery`. The complete manual bundle installs that wallpaper, the Plasma style, color scheme and actual Iosevka font. Installing only the inner look-and-feel folder from the old 1.0.0 manual suite does not install these companion files. Use the native 1.1.0 download for KDE's Get New interface.
 
 No panel/widget layout is distributed or reset. The installer uses XDG user directories, backs up overwritten theme files and appearance settings under `~/.local/state/srcery-plasma/backups/`, and prints the backup path. It makes no network requests, modifies no system files and does not change the login manager or boot screen. Review install.py before running it. Backups include the desktop config for recovery; restoring the whole config also restores the layout as it was at backup time.
 
